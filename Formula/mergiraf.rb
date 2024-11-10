@@ -7,7 +7,7 @@ class Mergiraf < Formula
 
   livecheck do
     url "https://codeberg.org/mergiraf/mergiraf/releases"
-    regex(/href=.*?mergiraf\/archive\/v(\d+(?:\.\d+)+)\.tar/i)
+    regex(%r{href=.*?mergiraf/archive/v(\d+(?:\.\d+)+)\.t}i)
   end
 
   depends_on "rust" => :build
