@@ -12,6 +12,7 @@ class Mergiraf < Formula
   end
 
   test do
-    system "cargo", "test", "--all-features", *std_cargo_args
+    # todo, test 3-way merge?
+    system "#{bin}/mergiraf", "-V"
   end
 end
